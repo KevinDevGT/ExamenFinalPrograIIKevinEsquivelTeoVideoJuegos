@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+   <head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>NOMBRE</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">UMG </div>
+      <div class="list-group list-group-flush">
+          <a href="html/tablas/categoria.html" class="list-group-item list-group-item-action bg-light">Lista Categoria Jugadores</a>
+          <a href="html/tablas/jugador.html" class="list-group-item list-group-item-action bg-light">Lista Jugadores</a>
+          <a href="html/tablas/partidas.html" class="list-group-item list-group-item-action bg-light">Lista Partidas Online</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn-primary" id="menu-toggle">Barra Menu</button>
+      </nav>
+
+      <div class="container-fluid p-5">
+        <h1 class="mt-4">Bienvenido al Sistema de VideoJuegos UMG</h1>
+        <p>Por favor utiliza el menu de la izquierda para empezar.</p>
+        <p>Puedes empezar por registrar una categoria de jugador, seguido un juegador, luego una partida y por ultimo asignar una partida</p>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>
+

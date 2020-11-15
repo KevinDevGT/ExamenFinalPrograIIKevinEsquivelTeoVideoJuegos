@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+   <head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>NOMBRE</title>
+
+  <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../../css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">UMG </div>
+      <div class="list-group list-group-flush">
+          <a href="categoria.html" class="list-group-item list-group-item-action bg-light">Lista Categoria Jugadores</a>
+          <a href="jugador.html" class="list-group-item list-group-item-action bg-light">Lista Jugadores</a>
+          <a href="partidas.html" class="list-group-item list-group-item-action bg-light">Lista Partidas Online</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn-primary" id="menu-toggle">Barra Menu</button>
+      </nav>
+
+      <div class="container-fluid p-5">
+        <h4 class="text-center mt-5">Tabla de Partidas Online</h4>
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre de Partida</th>
+                        <th scope="col">Capacidad</th>
+                        <th scope="col">Tipo de Partida</th>
+                        <th scope="col"></th>
+                    </tr>
+                    </thead>
+                       <tbody id="TablaPartidas">
+                           
+                       </tbody>
+                </table>
+            </div>
+        <div class="text-center">
+            <a href="../registros/partida.html" class="btn btn-success">Nuevo</a>
+            </div>
+      </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Editar Partidas Online</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid p-5">
+            <div class="row">
+                <label >Nombre de Partida</label>
+                <input type="text" maxlength="75" class="form-control mt-3" id="nombre">
+                <label >Capacidad</label>
+                <input type="number" class="form-control mt-3" id="capacidad">
+                <label >Tipo de Partida</label>
+                <select class="form-control mt-3" id="tipo">
+                    <option>Casual</option>
+                    <option>Competitivo</option>
+                </select>
+            </div>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary" onclick="update()">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../../vendor/jquery/jquery.min.js"></script>
+  <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script src="../../js/tablas/partida.js"></script>
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>
